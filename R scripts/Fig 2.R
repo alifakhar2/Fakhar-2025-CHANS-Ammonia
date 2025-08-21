@@ -5,7 +5,7 @@ library(dplyr)
 library(ggbreak)
 library(patchwork)
 
-dat1 <- read_excel('/Users/AU775281/Documents/Msc Ali Fakhar/After Denmark/Manuscript CHANS and Field/Raw Data/Fig 2.xlsx')
+dat1 <- read_excel('Source of data.xlsx')
 
 
 #Making data for Total, Agri and other NH3 emissions
@@ -200,7 +200,7 @@ combined_plot <- (p1 | p3) / (p2 | p4) +
 
 
 #Saving plot#
-ggsave("/Users/AU775281/Documents/Msc Ali Fakhar/After Denmark/Manuscript CHANS and Field/Figures/Fig 2.png", 
+ggsave("Export library/Fig 2.png", 
 plot = combined_plot, 
 width = 12, 
 height = 10, 

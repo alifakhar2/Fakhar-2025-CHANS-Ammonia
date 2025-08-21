@@ -5,7 +5,7 @@ library(dplyr)
 library(ggbreak)
 library(patchwork)
 
-dat1 <- read_excel('/Users/AU775281/Documents/Msc Ali Fakhar/After Denmark/Manuscript CHANS and Field/Raw Data/Fig 3.xlsx')
+dat1 <- read_excel('Source of data.xlsx')
 
 #Seperating Mean and SD values for plotting for Urea and AS treatments 
 u.mean <- dat1 %>%
@@ -163,7 +163,7 @@ p2 <- p2 +
 combined_plot <- p1 + p2; combined_plot
 
 #Saving plot#
-ggsave("/Users/AU775281/Documents/Msc Ali Fakhar/After Denmark/Manuscript CHANS and Field/Figures/Fig 3.png", 
+ggsave("Export library/Fig 3.png", 
        plot = combined_plot, 
        width = 12, 
        height = 5, 

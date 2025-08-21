@@ -5,7 +5,7 @@ library(dplyr)
 library(ggbreak)
 library(patchwork)
 
-dat1 <- read_excel('/Users/AU775281/Documents/Msc Ali Fakhar/After Denmark/Manuscript CHANS and Field/Raw Data/Fig 6.xlsx')
+dat1 <- read_excel('Source of data.xlsx')
 colnames(dat1) <- dat1[1, ]  
 dat1 <- dat1[-1, ] 
 
@@ -340,7 +340,7 @@ combined_plot <- (phu | phas) /
 
 
 #Saving plot#
-ggsave("/Users/AU775281/Documents/Msc Ali Fakhar/After Denmark/Manuscript CHANS and Field/Figures/Fig 6.png", 
+ggsave("Export library/Fig 6.png", 
 plot = combined_plot, 
 width = 10, 
 height = 12, 

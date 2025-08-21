@@ -6,7 +6,7 @@ library(ggbreak)
 library(patchwork)
 library(ggpmisc)
 
-dat1 <- read_excel('/Users/AU775281/Documents/Msc Ali Fakhar/After Denmark/Manuscript CHANS and Field/Raw Data/Fig 4.xlsx')
+dat1 <- read_excel('Source of data.xlsx')
 colnames(dat1) <- dat1[1, ]  
 dat1 <- dat1[-1, ]          
 
@@ -203,7 +203,7 @@ combined_plot <- p1 / p2 / p3 +
   theme(plot.tag = element_text(size = 10, face = "bold", hjust = 0)); combined_plot
 
 #Saving plot#
-#ggsave("/Users/AU775281/Documents/Msc Ali Fakhar/After Denmark/Manuscript CHANS and Field/Figures/Fig 4.png", 
+ggsave("Export library/Fig 4.png", 
 plot = combined_plot, 
 width = 5.5, 
 height = 11, 
